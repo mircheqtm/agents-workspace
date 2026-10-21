@@ -1,0 +1,28 @@
+# По умолчанию всё игнорируется.
+/*
+!/.gitignore
+!/README.md
+!/AGENTS.md
+!/memory/
+!/areas/
+!/projects/
+!/templates/
+
+# Разрешены только Markdown-метаданные непосредственно в этих каталогах.
+/memory/*
+!/memory/*.md
+/areas/*
+!/areas/*.md
+/projects/*
+!/projects/*.md
+/templates/*
+!/templates/*.md
+
+# Сами проекты, включая вложенные Git-репозитории, остаются локальными.
+/workspace/
+
+# Дополнительная защита локальных секретов.
+.env
+.env.*
+*.pem
+*.key
